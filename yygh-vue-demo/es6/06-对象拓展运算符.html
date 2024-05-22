@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //对象复制
+        let person1 = {name: "Amy", age: 15}
+        let someone1 = { ...person1}
+        // console.log(someone1)
+
+        //对象合并
+        let age = {age: 15}
+        let name = {name: "Amy"}
+        let person2 = {...age, ...name}
+        console.log(person2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义变量
+        {  
+            var a = 1;
+            let b = 2;
+        }
+        console.log(a)
+        console.log(b) // b is not defined  let定义变量有作用范围，代码块中定义的变量只能在代码块中使用
+
+        var m = 1;
+        var m = 2;
+        let n = 10;
+        // let n = 20; //  Identifier 'n' has already been declared
+        console.log(m)
+        console.log(n)
+    </script>
+</body>
+</html>

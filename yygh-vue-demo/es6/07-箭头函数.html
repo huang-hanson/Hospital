@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //传统方式定义函数
+        var f1 = function(a) {
+            return a
+        }
+        // console.log(f1(3))
+
+        //es6使用箭头函数定义
+        //参数 => 函数体
+        var f2 = a => a
+        // console.log(f2(4))
+
+        var f3 = function(m,n){
+            return m+n
+        }
+
+        // es6
+        var f4 = (m,n) => m+n
+        console.log(f4(1,2))
+    </script>
+</body>
+</html>
