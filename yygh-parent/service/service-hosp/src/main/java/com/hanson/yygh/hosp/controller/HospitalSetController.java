@@ -8,6 +8,7 @@ import com.hanson.yygh.common.utils.MD5;
 import com.hanson.yygh.hosp.service.HospitalSetService;
 import com.hanson.yygh.model.hosp.HospitalSet;
 import com.hanson.yygh.vo.hosp.HospitalSetQueryVo;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -20,6 +21,7 @@ import java.util.Random;
  * @author hanson
  * @date 2024/5/22 13:05
  */
+@Api(description = "医院设置接口")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
 @CrossOrigin

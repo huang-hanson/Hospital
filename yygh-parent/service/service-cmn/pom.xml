@@ -9,9 +9,22 @@
     </parent>
 
     <version>1.0</version>
-    <artifactId>service-hosp</artifactId>
+    <artifactId>service-cmn</artifactId>
     <packaging>jar</packaging>
-    <name>service-hosp</name>
-    <description>service-hosp</description>
+    <name>service-cmn</name>
+    <description>service-cmn</description>
+
+    <dependencies>
+    </dependencies>
+
+    <build>
+        <finalName>service-cmn</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
