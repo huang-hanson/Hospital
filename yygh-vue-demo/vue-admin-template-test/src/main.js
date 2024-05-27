@@ -7,6 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 
 import '@/styles/index.scss' // global css
+import '@/styles/show.scss'
 
 import App from './App'
 import router from './router'

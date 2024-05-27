@@ -1,6 +1,8 @@
 package com.hanson.yygh.hosp.service;
 
 import com.hanson.yygh.model.hosp.Hospital;
+import com.hanson.yygh.vo.hosp.HospitalQueryVo;
+import org.springframework.data.domain.Page;
 
 import java.util.Map;
 
@@ -21,4 +23,14 @@ public interface HospitalService {
      * @return
      */
     Hospital getByHoscode(String hoscode);
+
+    // 医院列表(条件查询分页)
+    Page<Hospital> selectHospPage(Integer page, Integer limit, HospitalQueryVo hospitalQueryVo);
+
+    void updateStatus(String id, Integer status);
+
+    Map<String, Object> getHospById(String id);
+
+    // 获取医院名称
+    String getHospName(String hoscode);
 }
