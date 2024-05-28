@@ -35,9 +35,9 @@
 
 # 业务流程
 
-![业务流程([[D:/xxx/md/1.png](https://user-images.githubusercontent.com/62464956/110754494-dc668e00-8282-11eb-8796-bafe40e99330.png)](https://user-images.githubusercontent.com/62464956/110754494-dc668e00-8282-11eb-8796-bafe40e99330.png))
+![业务流程](https://user-images.githubusercontent.com/62464956/110754494-dc668e00-8282-11eb-8796-bafe40e99330.png)
 
 
 # 服务架构
 
-![服务架构([[D:/xxx/md/1.png](https://user-images.githubusercontent.com/62464956/110754536-e9837d00-8282-11eb-9b99-8ddbd87d1a14.png)](https://user-images.githubusercontent.com/62464956/110754536-e9837d00-8282-11eb-9b99-8ddbd87d1a14.png))
+![服务架构](https://user-images.githubusercontent.com/62464956/110754536-e9837d00-8282-11eb-9b99-8ddbd87d1a14.png)
