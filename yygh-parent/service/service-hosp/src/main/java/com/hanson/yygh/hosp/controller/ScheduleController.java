@@ -18,7 +18,7 @@ import java.util.Map;
 @Api(description = "排班接口")
 @RestController
 @RequestMapping("/admin/hosp/schedule")
-@CrossOrigin
+//@CrossOrigin
 public class ScheduleController {
 
     @Autowired

@@ -10,8 +10,14 @@
 
     <version>1.0</version>
     <artifactId>service-user</artifactId>
-    <packaging>jar</packaging>
-    <name>service-user</name>
-    <description>service-user</description>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.hanson.yygh</groupId>
+            <artifactId>service-cmn-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

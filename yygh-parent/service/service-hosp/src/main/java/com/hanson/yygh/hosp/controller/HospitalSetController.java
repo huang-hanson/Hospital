@@ -24,7 +24,7 @@ import java.util.Random;
 @Api(description = "医院设置接口")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
-@CrossOrigin
+//@CrossOrigin
 public class HospitalSetController {
 
     // 注入service

@@ -4,6 +4,7 @@ import com.hanson.yygh.model.hosp.Hospital;
 import com.hanson.yygh.vo.hosp.HospitalQueryVo;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,4 +34,8 @@ public interface HospitalService {
 
     // 获取医院名称
     String getHospName(String hoscode);
+
+    List<Hospital> findByHosname(String hosname);
+
+    Map<String, Object> item(String hoscode);
 }
