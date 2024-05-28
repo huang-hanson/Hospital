@@ -30,30 +30,30 @@ public class UserController {
     public Result list(@PathVariable Long page,
                        @PathVariable Long limit,
                        UserInfoQueryVo userInfoQueryVo) {
-        Page<UserInfo> pageParam = new Page<>(page,limit);
+        Page<UserInfo> pageParam = new Page<>(page, limit);
         IPage<UserInfo> pageModel =
-                userInfoService.selectPage(pageParam,userInfoQueryVo);
+                userInfoService.selectPage(pageParam, userInfoQueryVo);
         return Result.ok(pageModel);
     }
 
     //用户锁定
     @GetMapping("lock/{userId}/{status}")
-    public Result lock(@PathVariable Long userId,@PathVariable Integer status) {
-        userInfoService.lock(userId,status);
+    public Result lock(@PathVariable Long userId, @PathVariable Integer status) {
+        userInfoService.lock(userId, status);
         return Result.ok();
     }
 
     //用户详情
     @GetMapping("show/{userId}")
     public Result show(@PathVariable Long userId) {
-        Map<String,Object> map = userInfoService.show(userId);
+        Map<String, Object> map = userInfoService.show(userId);
         return Result.ok(map);
     }
 
     //认证审批
     @GetMapping("approval/{userId}/{authStatus}")
-    public Result approval(@PathVariable Long userId,@PathVariable Integer authStatus) {
-        userInfoService.approval(userId,authStatus);
+    public Result approval(@PathVariable Long userId, @PathVariable Integer authStatus) {
+        userInfoService.approval(userId, authStatus);
         return Result.ok();
     }
 }

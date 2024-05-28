@@ -304,3 +304,381 @@ Caused by: java.net.NoRouteToHostException: No route to host: connect
 2024-05-28 23:53:36.011 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:44, serverValue:1127}] to 47.116.123.21:27017 because the pool has been closed.
 2024-05-28 23:53:36.016 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-05-28 23:53:36.029 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-05-29 00:50:26.474 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 00:50:28.414 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 00:50:28.415 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 00:50:28.515 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95ms. Found 3 repository interfaces.
+2024-05-29 00:50:28.538 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 00:50:28.540 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 00:50:28.562 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 00:50:28.563 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 00:50:28.564 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.ScheduleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 00:50:28.564 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2024-05-29 00:50:28.957 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4cb2c2b6-2068-3cde-abc6-29fa7c5dc6fe
+2024-05-29 00:50:29.115 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 00:50:29.200 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 00:50:30.018 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 00:50:30.029 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 00:50:30.030 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 00:50:30.030 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 00:50:30.220 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 00:50:30.221 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3704 ms
+2024-05-29 00:50:30.855 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 00:50:31.146 [cluster-ClusterId{value='66560b56e0b2cd11ca098bd1', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1128}] to 47.116.123.21:27017
+2024-05-29 00:50:31.160 [cluster-ClusterId{value='66560b56e0b2cd11ca098bd1', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11871100}
+2024-05-29 00:50:31.294 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:1129}] to 47.116.123.21:27017
+2024-05-29 00:50:33.523 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-29 00:50:33.547 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 00:50:33.553 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 00:50:33.694 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 00:50:34.254 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 00:50:35.631 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-29 00:50:35.653 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2024-05-29 00:50:35.694 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 00:50:35.896 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: lockHospitalSetUsingPUT_1
+2024-05-29 00:50:35.937 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 00:50:35.975 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 00:50:35.999 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 00:50:36.264 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 00:50:36.761 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 13.315 seconds (JVM running for 15.941)
+2024-05-29 00:51:51.316 [http-nio-8201-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 00:51:51.317 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-29 00:51:51.325 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-05-29 00:51:51.863 [http-nio-8201-exec-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 00:51:51.880 [http-nio-8201-exec-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: service-cmn instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2024-05-29 00:51:51.885 [http-nio-8201-exec-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2024-05-29 00:51:51.972 [http-nio-8201-exec-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 00:51:51.974 [http-nio-8201-exec-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-cmn initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[192.168.93.1:8202],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.93.1:8202;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@55e1c1c0
+2024-05-29 00:51:52.895 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 01:00:58.240 [Thread-2] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 01:00:58.292 [Thread-2] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 01:00:58.292 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:00:58.327 [Thread-2] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:1129}] to 47.116.123.21:27017 because the pool has been closed.
+2024-05-29 01:01:01.446 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 01:01:02.180 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:02.181 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:02.184 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2024-05-29 01:01:02.197 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:02.197 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:02.200 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2024-05-29 01:01:02.374 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=159d7ca2-899a-3e5f-9f2f-9ebe03dd40f4
+2024-05-29 01:01:02.422 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:02.431 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:02.786 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 01:01:02.789 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:02.790 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 01:01:02.791 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 01:01:02.861 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 01:01:02.861 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1411 ms
+2024-05-29 01:01:02.902 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:01:03.075 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:04.184 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 01:01:04.799 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 01:01:05.033 [cluster-ClusterId{value='66560dd0e0b2cd11ca098bd2', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:1130}] to 47.116.123.21:27017
+2024-05-29 01:01:05.044 [cluster-ClusterId{value='66560dd0e0b2cd11ca098bd2', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10483400}
+2024-05-29 01:01:05.216 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:01:05.218 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@service-cmn -> []
+2024-05-29 01:01:06.868 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:06.874 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 01:01:06.876 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.93.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8201,"scheduled":false,"serviceName":"DEFAULT_GROUP@@service-hosp","stopped":false,"weight":1.0} to beat map.
+2024-05-29 01:01:06.877 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8201,"weight":1.0}
+2024-05-29 01:01:06.898 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 01:01:08.030 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 8.524 seconds (JVM running for 647.21)
+2024-05-29 01:01:08.035 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MybatisPlusAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnBean (types: org.mybatis.spring.mapper.MapperFactoryBean,org.mybatis.spring.mapper.MapperScannerConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-05-29 01:01:10.874 [Thread-58] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 01:01:10.875 [Thread-58] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@service-hosp:192.168.93.1:8201 from beat map.
+2024-05-29 01:01:10.876 [Thread-58] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{},"port":8201,"weight":1.0}
+2024-05-29 01:01:10.902 [Thread-58] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 01:01:10.934 [Thread-58] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:14.437 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 01:01:15.184 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:15.185 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:15.186 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2024-05-29 01:01:15.195 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:15.195 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:15.197 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2024-05-29 01:01:15.320 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=db74a54d-9543-3ab4-8b83-a3585c53ff3e
+2024-05-29 01:01:15.344 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:15.349 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:15.562 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 01:01:15.562 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:15.563 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 01:01:15.563 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 01:01:15.601 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 01:01:15.601 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1157 ms
+2024-05-29 01:01:15.627 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:01:15.731 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:16.761 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 01:01:17.397 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 01:01:17.427 [cluster-ClusterId{value='66560ddde0b2cd11ca098bd3', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:1131}] to 47.116.123.21:27017
+2024-05-29 01:01:17.439 [cluster-ClusterId{value='66560ddde0b2cd11ca098bd3', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11544000}
+2024-05-29 01:01:19.164 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:19.168 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 01:01:19.168 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.93.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8201,"scheduled":false,"serviceName":"DEFAULT_GROUP@@service-hosp","stopped":false,"weight":1.0} to beat map.
+2024-05-29 01:01:19.169 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8201,"weight":1.0}
+2024-05-29 01:01:19.188 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 01:01:19.899 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 7.699 seconds (JVM running for 659.08)
+2024-05-29 01:01:19.901 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-05-29 01:01:19.992 [Thread-66] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 01:01:19.992 [Thread-66] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@service-hosp:192.168.93.1:8201 from beat map.
+2024-05-29 01:01:19.992 [Thread-66] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{},"port":8201,"weight":1.0}
+2024-05-29 01:01:20.010 [Thread-66] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 01:01:20.011 [Thread-66] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:22.744 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 01:01:23.683 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:23.683 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:23.685 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2024-05-29 01:01:23.692 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:23.692 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:23.694 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2024-05-29 01:01:23.804 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=1831f14e-16ae-34fb-a685-c4f9c213273b
+2024-05-29 01:01:23.828 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:23.838 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:24.060 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 01:01:24.061 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:24.061 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 01:01:24.061 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 01:01:24.105 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 01:01:24.105 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1358 ms
+2024-05-29 01:01:24.502 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-29 01:01:24.543 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:01:24.722 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:25.264 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:01:25.266 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:01:25.782 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 01:01:26.348 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 01:01:26.380 [cluster-ClusterId{value='66560de6e0b2cd11ca098bd4', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:1132}] to 47.116.123.21:27017
+2024-05-29 01:01:26.391 [cluster-ClusterId{value='66560de6e0b2cd11ca098bd4', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9311700}
+2024-05-29 01:01:28.572 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-29 01:01:28.575 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2024-05-29 01:01:28.589 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:01:28.600 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:01:28.610 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:28.622 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 01:01:28.624 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.93.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8201,"scheduled":false,"serviceName":"DEFAULT_GROUP@@service-hosp","stopped":false,"weight":1.0} to beat map.
+2024-05-29 01:01:28.625 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8201,"weight":1.0}
+2024-05-29 01:01:28.645 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 01:01:29.548 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 8.889 seconds (JVM running for 668.729)
+2024-05-29 01:01:29.553 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   RedisAutoConfiguration#redisTemplate:
+      Did not match:
+         - @ConditionalOnBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-05-29 01:01:30.094 [Thread-74] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 01:01:30.094 [Thread-74] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@service-hosp:192.168.93.1:8201 from beat map.
+2024-05-29 01:01:30.094 [Thread-74] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{},"port":8201,"weight":1.0}
+2024-05-29 01:01:30.117 [Thread-74] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 01:01:30.118 [Thread-74] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:32.309 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 01:01:33.018 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:33.019 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:33.050 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 3 repository interfaces.
+2024-05-29 01:01:33.060 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:01:33.060 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:01:33.068 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:01:33.068 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:01:33.069 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.ScheduleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:01:33.069 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2024-05-29 01:01:33.185 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4cb2c2b6-2068-3cde-abc6-29fa7c5dc6fe
+2024-05-29 01:01:33.213 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:33.219 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:01:33.524 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 01:01:33.525 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:33.526 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 01:01:33.526 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 01:01:33.576 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 01:01:33.576 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1261 ms
+2024-05-29 01:01:33.630 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 01:01:33.652 [cluster-ClusterId{value='66560dede0b2cd11ca098bd5', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:1133}] to 47.116.123.21:27017
+2024-05-29 01:01:33.661 [cluster-ClusterId{value='66560dede0b2cd11ca098bd5', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6760700}
+2024-05-29 01:01:33.751 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:1134}] to 47.116.123.21:27017
+2024-05-29 01:01:34.875 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-29 01:01:34.888 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:01:35.001 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:01:35.300 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:01:35.302 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@service-cmn -> []
+2024-05-29 01:01:35.854 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 01:01:37.138 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-29 01:01:37.140 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2024-05-29 01:01:37.146 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:01:37.194 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: lockHospitalSetUsingPUT_1
+2024-05-29 01:01:37.216 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:01:37.257 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:01:37.260 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 01:01:37.261 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.93.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8201,"scheduled":false,"serviceName":"DEFAULT_GROUP@@service-hosp","stopped":false,"weight":1.0} to beat map.
+2024-05-29 01:01:37.261 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8201,"weight":1.0}
+2024-05-29 01:01:37.277 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 01:01:37.832 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 7.069 seconds (JVM running for 677.013)
+2024-05-29 01:01:37.835 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MybatisPlusAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.mybatis.spring.mapper.MapperFactoryBean,org.mybatis.spring.mapper.MapperScannerConfigurer; SearchStrategy: all) found beans of type 'org.mybatis.spring.mapper.MapperScannerConfigurer' com.hanson.yygh.hosp.config.HospConfig#MapperScannerRegistrar#0 (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-05-29 01:01:45.343 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:01:45.345 [com.alibaba.nacos.client.naming.updater] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@service-cmn -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.93.1#8202#DEFAULT#DEFAULT_GROUP@@service-cmn","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8202,"serviceName":"DEFAULT_GROUP@@service-cmn","weight":1.0}]
+2024-05-29 01:02:18.358 [Thread-51] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2024-05-29 01:02:18.362 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 01:02:18.362 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@service-hosp:192.168.93.1:8201 from beat map.
+2024-05-29 01:02:18.362 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-hosp with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.93.1","ipDeleteTimeout":30000,"metadata":{},"port":8201,"weight":1.0}
+2024-05-29 01:02:18.382 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 01:02:18.383 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:02:18.390 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:1134}] to 47.116.123.21:27017 because the pool has been closed.
+2024-05-29 01:53:18.022 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2024-05-29 01:53:20.728 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:53:20.729 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:53:20.931 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192ms. Found 3 repository interfaces.
+2024-05-29 01:53:20.964 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-29 01:53:20.966 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-05-29 01:53:20.996 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:53:20.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:53:20.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hanson.yygh.hosp.repository.ScheduleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-05-29 01:53:20.998 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2024-05-29 01:53:21.404 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4cb2c2b6-2068-3cde-abc6-29fa7c5dc6fe
+2024-05-29 01:53:21.623 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:53:21.727 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-29 01:53:22.654 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2024-05-29 01:53:22.685 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:53:22.687 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-29 01:53:22.687 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-05-29 01:53:23.015 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-29 01:53:23.016 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4955 ms
+2024-05-29 01:53:23.896 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[47.116.123.21:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2024-05-29 01:53:24.059 [cluster-ClusterId{value='66561a1370441a47b622426b', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1136}] to 47.116.123.21:27017
+2024-05-29 01:53:24.074 [cluster-ClusterId{value='66561a1370441a47b622426b', description='null'}-47.116.123.21:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=47.116.123.21:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 6]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12684500}
+2024-05-29 01:53:24.539 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:1137}] to 47.116.123.21:27017
+2024-05-29 01:53:28.067 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-29 01:53:28.108 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:53:28.118 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-29 01:53:28.337 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-29 01:53:29.462 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2024-05-29 01:53:32.926 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-29 01:53:33.133 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2024-05-29 01:53:33.243 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:53:33.910 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: lockHospitalSetUsingPUT_1
+2024-05-29 01:53:33.959 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-29 01:53:34.023 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2024-05-29 01:53:34.063 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2024-05-29 01:53:34.543 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.93.1:8201 register finished
+2024-05-29 01:53:35.444 [restartedMain] INFO  com.hanson.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 20.454 seconds (JVM running for 22.635)
+2024-05-29 01:53:47.746 [http-nio-8201-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 01:53:47.747 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-29 01:53:47.769 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2024-05-29 01:53:48.484 [http-nio-8201-exec-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 01:53:48.517 [http-nio-8201-exec-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: service-cmn instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2024-05-29 01:53:48.532 [http-nio-8201-exec-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2024-05-29 01:53:48.610 [http-nio-8201-exec-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 01:53:48.614 [http-nio-8201-exec-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-cmn initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[192.168.93.1:8202],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.93.1:8202;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@7213e4d2
+2024-05-29 01:53:49.547 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2024-05-29 01:56:28.159 [http-nio-8201-exec-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:1138}] to 47.116.123.21:27017
+2024-05-29 02:30:07.769 [http-nio-8201-exec-2] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:1137}] to 47.116.123.21:27017 because there was a socket exception raised by this connection.
+2024-05-29 02:30:08.269 [http-nio-8201-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:1139}] to 47.116.123.21:27017
+2024-05-29 02:30:22.828 [http-nio-8201-exec-4] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:3, serverValue:1138}] to 47.116.123.21:27017 because there was a socket exception raised by this connection.
+2024-05-29 03:11:10.176 [http-nio-8201-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-29 03:11:10.624 [http-nio-8201-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-29 03:36:56.180 [Thread-58] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2024-05-29 03:36:57.080 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-29 03:36:57.236 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-29 03:36:57.249 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-29 03:36:57.516 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:4, serverValue:1139}] to 47.116.123.21:27017 because the pool has been closed.
+2024-05-29 03:36:57.525 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-29 03:36:57.549 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

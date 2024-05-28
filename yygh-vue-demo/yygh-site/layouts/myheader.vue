@@ -97,10 +97,10 @@
               <div class="code-text"> “预约挂号”APP</div>
             </div>
           </div>
-          <div class="slogan">
+          <!-- <div class="slogan">
             <div>xxxxxx官方指定平台</div>
             <div>快速挂号 安全放心</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </el-dialog>
