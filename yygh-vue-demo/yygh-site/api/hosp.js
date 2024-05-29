@@ -34,4 +34,28 @@ export default {
         })
     },
 
+    // 可预约信息分页
+    getBookingScheduleRule(page, limit, hoscode, depcode) {
+        return request({
+            url: `${api_name}/auth/getBookingScheduleRule/${page}/${limit}/${hoscode}/${depcode}`,
+            method: 'get'
+        })
+    },
+
+    // 获取排版信息
+    findScheduleList(hoscode, depcode, workDate) {
+        return request({
+            url: `${api_name}/auth/findScheduleList/${hoscode}/${depcode}/${workDate}`,
+            method: 'get'
+        })
+    },
+
+    // 根据排版id获取排版信息
+    getSchedule(id) {
+        return request({
+            url: `${api_name}/getSchedule/${id}`,
+            method: 'get'
+        })
+    }
+
 }

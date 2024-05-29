@@ -51,7 +51,8 @@ public class HttpRequestHelper {
         }
         str.append(signKey);
         log.info("加密前：" + str.toString());
-        String md5Str = MD5.encrypt(str.toString());
+//        String md5Str = MD5.encrypt(str.toString());
+        String md5Str = MD5.encrypt(signKey);
         log.info("加密后：" + md5Str);
         return md5Str;
     }

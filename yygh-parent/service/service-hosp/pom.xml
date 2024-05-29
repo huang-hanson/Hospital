@@ -25,6 +25,12 @@
             <artifactId>service-cmn-client</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.hanson.yygh</groupId>
+            <artifactId>rabbit-util</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 </project>

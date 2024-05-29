@@ -16,4 +16,7 @@ public interface HospitalSetService extends IService<HospitalSet> {
      * @return
      */
     String getSignKey(String hoscode);
+
+    //获取医院签名信息
+    SignInfoVo getSignInfoVo(String hoscode);
 }

@@ -17,6 +17,7 @@
     "element-ui": "^2.15.14",
     "js-cookie": "^3.0.5",
     "nuxt": "^2.0.0",
+    "vue-qriously": "^1.1.1",
     "vue-server-renderer": "^2.7.16"
   },
   "devDependencies": {
